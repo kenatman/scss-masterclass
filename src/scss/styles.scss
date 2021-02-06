@@ -1,12 +1,11 @@
-@import "_variables";
-@import "mixins.scss";
+@import "_extend";
 
 a {
-  margin-bottom: 10px;
-  &:nth-child(odd) {
-    @include link("odd");
-  }
-  &:nth-child(even) {
-    @include link("even");
-  }
+  @extend %super;
+  text-decoration: none;
+}
+
+button {
+  @extend %super;
+  border: none;
 }
