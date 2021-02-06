@@ -4,9 +4,9 @@
 a {
   margin-bottom: 10px;
   &:nth-child(odd) {
-    @include link(red);
+    @include link("odd");
   }
   &:nth-child(even) {
-    @include link(blue);
+    @include link("even");
   }
 }
