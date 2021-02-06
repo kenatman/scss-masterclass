@@ -1,11 +1,17 @@
-@import "_extend";
+@import "_mixins";
 
-a {
-  @extend %super;
-  text-decoration: none;
-}
-
-button {
-  @extend %super;
-  border: none;
+h1 {
+  color: red;
+  @include super("Iphone") {
+    color: yellow;
+  }
+  @include super("Iphone-l") {
+    color: green;
+  }
+  @include super("Tablet") {
+    color: blue;
+  }
+  @include super("Tablet-l") {
+    color: thistle;
+  }
 }
