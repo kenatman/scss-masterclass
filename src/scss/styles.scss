@@ -1,4 +1,12 @@
 @import "_variables";
-body {
-  background: $bg;
+@import "mixins.scss";
+
+a {
+  margin-bottom: 10px;
+  &:nth-child(odd) {
+    @include link(red);
+  }
+  &:nth-child(even) {
+    @include link(blue);
+  }
 }
